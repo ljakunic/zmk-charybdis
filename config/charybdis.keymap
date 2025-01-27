@@ -141,10 +141,10 @@
         settings_layer {
             display-name = "Settings";
             bindings = <
-  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4      &trans  &trans  &kp K_SLEEP  &kp C_SLEEP_MODE  &kp C_SLEEP
-  &bootloader   &sys_reset    &trans        &trans        &bt BT_CLR_ALL    &trans  &trans  &trans       &trans            &trans
-  &trans        &trans        &trans        &trans        &bt BT_CLR        &trans  &trans  &trans       &trans            &soft_off
-                              &trans        &trans        &trans            &trans  &trans
+  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2    &bt BT_SEL 3  &bt BT_SEL 4      &trans  &trans  &kp K_SLEEP  &kp C_SLEEP_MODE  &kp C_SLEEP
+  &bootloader   &sys_reset    &studio_unlock  &trans        &bt BT_CLR_ALL    &trans  &trans  &trans       &trans            &trans
+  &trans        &trans        &trans          &trans        &bt BT_CLR        &trans  &trans  &trans       &trans            &soft_off
+                              &trans          &trans        &trans            &trans  &trans
             >;
         };
 
