@@ -18,10 +18,14 @@
         //      layers = <Mouse>;
         //      input-processors = <&zip_xy_scaler 1 3>;
         //  };
-          scroll {
-              layers = <SCROLL>;
-              input-processors = <&zip_xy_scaler 1 3>, <&zip_xy_to_scroll_mapper>, <&zip_scroll_transform (INPUT_TRANSFORM_Y_INVERT)>;
-          };
+
+        scroll {
+            layers = <SCROLL>;
+            input-processors =
+                <&zip_xy_scaler 1 3>,
+                <&zip_xy_to_scroll_mapper>,
+                <&zip_scroll_transform (INPUT_TRANSFORM_Y_INVERT)>;
+        };
     };
 
     behaviors {
@@ -151,18 +155,19 @@
         mouse_layer {
             bindings = <
   &trans  &trans    &trans    &trans    &trans    &trans  &trans  &trans  &trans  &trans
-  &mo SCROLL  &mkp MB1  &mkp MB3  &mkp MB2  &trans    &trans  &trans  &trans  &trans  &trans
+  &mo 8   &mkp MB1  &mkp MB3  &mkp MB2  &trans    &trans  &trans  &trans  &trans  &trans
   &trans  &trans    &trans    &trans    &trans    &trans  &trans  &trans  &trans  &trans
                     &trans    &trans    &trans    &trans  &trans
             >;
         };
-                scroll_layer {
-                    bindings = <
-          &trans  &trans    &trans    &trans    &trans    &trans  &trans  &trans  &trans  &trans
-          &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-          &trans  &trans    &trans    &trans    &trans    &trans  &trans  &trans  &trans  &trans
-                            &trans    &trans    &trans    &trans  &trans
-                    >;
-                };
+
+        scroll_layer {
+            bindings = <
+  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+                  &trans  &trans  &trans    &trans  &trans
+            >;
+        };
     };
 };
