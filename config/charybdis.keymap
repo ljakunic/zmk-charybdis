@@ -18,10 +18,10 @@
         //      layers = <Mouse>;
         //      input-processors = <&zip_xy_scaler 1 3>;
         //  };
-        //  scroll {
-        //      layers = <Nav>;
-        //      input-processors = <&zip_xy_scaler 1 3>, <&zip_xy_to_scroll_mapper>, <&zip_scroll_transform (INPUT_TRANSFORM_Y_INVERT)>;
-        //  };
+          scroll {
+              layers = <mouse_layer>;
+              input-processors = <&zip_xy_scaler 1 3>, <&zip_xy_to_scroll_mapper>, <&zip_scroll_transform (INPUT_TRANSFORM_Y_INVERT)>;
+          };
     };
 
     behaviors {
