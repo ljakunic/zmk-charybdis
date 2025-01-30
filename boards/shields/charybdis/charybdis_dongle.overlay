@@ -59,7 +59,7 @@ physical_layout0: physical_layout_0{
     ;
 };
 
-    default_transform: default_transform{
+    default_transform: default_transform_0 {
         compatible = "zmk,matrix-transform";
         columns = <10>;
         rows = <4>;
