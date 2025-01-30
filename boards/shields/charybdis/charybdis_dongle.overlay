@@ -3,7 +3,7 @@
 
 
 &charybdis_5col_layout {
-    transform = <&default_tranform>;
+    transform = <&default_transform>;
 };
 
 / {

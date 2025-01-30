@@ -20,7 +20,7 @@
         >;
     };
 
-    default_tranform: keymap_transform_1 {
+    default_transform: keymap_transform_1 {
         compatible = "zmk,matrix-transform";
         columns = <10>;
         rows = <4>;
@@ -92,7 +92,7 @@
         compatible = "zmk,physical-layout";
         display-name = "5-column";
 
-        transform = <&default_tranform>;
+        transform = <&default_transform>;
 
         keys  //                     w   h    x    y     rot    rx    ry
             = <&key_physical_attrs 100 100    0   57       0     0     0>
