@@ -1,8 +1,13 @@
 #include "charybdis.dtsi"
 
+&charybdis_5col_layout {
+    transform = <&five_column_transform>;
+};
+
 / {
     chosen {
         zmk,kscan = &mock_kscan;
+        zmk,physical-layout = &charybdis_5col_layout;
     };
 
     mock_kscan: kscan_1 {
