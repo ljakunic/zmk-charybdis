@@ -6,7 +6,7 @@
         zmk,physical-layout = &charybdis_5col_layout;
     };
 
-    mock_kscan: kscan_1 {
+    mock_kscan: mock_kscan_0 {
         compatible = "zmk,kscan-mock";
         columns = <0>;
         rows = <0>;
