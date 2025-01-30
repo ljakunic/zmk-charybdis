@@ -6,7 +6,7 @@
 	col-offset = <5>;
 };
 
-&six_column_transform {
+&charybdis_6col_transform {
 	col-offset = <6>;
 };
 
