@@ -2,14 +2,14 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 
 
-&physical_layout0 {
+&charybdis_5col_layout {
     transform = <&five_column_transform>;
 };
 
 / {
     chosen {
         zmk,kscan = &mock_kscan;
-        zmk,physical-layout = &physical_layout0;
+        zmk,physical-layout = &charybdis_5col_layout;
     };
 
     mock_kscan: mock_kscan_0 {
