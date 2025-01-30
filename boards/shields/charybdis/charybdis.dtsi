@@ -41,7 +41,7 @@
         compatible = "zmk,physical-layout";
         display-name = "6-column";
 
-        transform = <&default_transform>;
+        transform = <&charybdis_6col_transform>;
 
         keys  //                     w   h    x    y     rot    rx    ry
             = <&key_physical_attrs 100 100    0   57       0     0     0>
