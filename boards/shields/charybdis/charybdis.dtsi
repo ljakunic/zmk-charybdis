@@ -83,7 +83,7 @@
             , <&key_physical_attrs 100 100  348  312       0     0     0>
             , <&key_physical_attrs 100 100  348  312    1500   398   789>
             , <&key_physical_attrs 100 100  348  312    3000   398   789>
-            , <&key_physical_attrs 100 100 1052  312 (d  1102   789>
+            , <&key_physical_attrs 100 100 1052  312 (-3000)  1102   789>
             , <&key_physical_attrs 100 100 1052  312 (-1500)  1102   789>
             ;
     };
