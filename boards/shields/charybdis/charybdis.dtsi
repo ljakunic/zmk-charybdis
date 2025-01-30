@@ -7,7 +7,7 @@
         zmk,physical-layout = &charybdis_5col_layout;
     };
 
-    charybdis_6col_transform: keymap_transform_0 {
+    default_transform: keymap_transform_0 {
         compatible = "zmk,matrix-transform";
         columns = <12>;
         rows = <4>;
@@ -20,7 +20,7 @@
         >;
     };
 
-    default_tranform: keymap_transform_1 {
+    five_column_transform: keymap_transform_1 {
         compatible = "zmk,matrix-transform";
         columns = <10>;
         rows = <4>;
@@ -92,7 +92,7 @@
         compatible = "zmk,physical-layout";
         display-name = "5-column";
 
-        transform = <&default_tranform>;
+        transform = <&five_column_transform>;
 
         keys  //                     w   h    x    y     rot    rx    ry
             = <&key_physical_attrs 100 100    0   57       0     0     0>
