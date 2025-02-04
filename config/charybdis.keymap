@@ -83,19 +83,19 @@
         base_layer {
             display-name = "Alpha";
             bindings = <
-  &kp J        &kp G        &kp M        &kp P        &kp V              &ht COLON SEMICOLON  &ht AMPERSAND PERIOD  &ht ASTERISK SLASH  &ht QUESTION DOUBLE_QUOTES  &ht EXCLAMATION SQT
-  &hm LGUI R   &hm LALT S   &hm LSHFT N  &hm LCTRL D  &kp B              &kp COMMA            &hm RCTRL A           &hm RSHFT E         &hm LALT I                  &hm RGUI H
-  &mt LC(Z) X  &mt LC(X) F  &mt LC(C) L  &mt LC(V) C  &kp W              &ht PLUS MINUS       &kp U                 &kp O               &kp Y                       &kp K
-                            &lt 7 TAB    &lt SYM T    &lt NUMFN ENTER    &lt NAV SPACE        &lt UTIL ESC
+  &kp Q        &kp W        &kp F        &kp P          &kp B            &ht COLON J        &ht AMPERSAND L  &ht ASTERISK U  &ht QUESTION Y  &ht EXCLAMATION SQT
+  &hm LGUI A   &hm LALT R   &hm LSHFT S  &hm LCTRL T    &kp G            &kp M              &hm RCTRL A      &hm RSHFT E     &hm LALT I      &hm RGUI O
+  &mt LC(Z) Z  &mt LC(X) X  &mt LC(C) C  &mt LC(V) D    &kp V            &ht PLUS K         &kp H            &kp COMMA       &kp PERIOD      &kp SLASH
+                            &lt 7 TAB    &lt SYM ENTER  &lt NUMFN TAB    &lt NAV BACKSPACE  &lt UTIL SPACE
             >;
         };
 
         nav_layer {
             display-name = "Nav";
             bindings = <
-  &trans           &trans  &trans  &trans       &trans    &trans  &trans    &trans     &trans     &trans
-  &kp LC(LS(TAB))  &trans  &trans  &kp LC(TAB)  &trans    &trans  &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT
-  &trans           &trans  &trans  &trans       &trans    &trans  &kp HOME  &kp PG_DN  &kp PG_UP  &kp END
+  &trans           &trans  &trans  &trans       &trans    &trans  &trans    &kp UP_ARROW  &trans     &trans
+  &kp LC(LS(TAB))  &trans  &trans  &kp LC(TAB)  &trans    &trans  &kp LEFT  &kp DOWN      &kp RIGHT  &trans
+  &trans           &trans  &trans  &trans       &trans    &trans  &kp HOME  &kp PG_DN     &kp PG_UP  &kp END
                            &trans  &trans       &trans    &trans  &trans
             >;
         };
