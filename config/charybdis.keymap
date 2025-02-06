@@ -116,7 +116,7 @@
         base_layer {
             display-name = "Alpha";
             bindings = <
-  &kp Q        &kp W        &kp F        &kp P          &kp B            &ht COLON J        &ht AMPERSAND L  &ht ASTERISK U  &ht QUESTION Y  &ht EXCLAMATION SQT
+  &ht ESC Q    &kp W        &kp F        &kp P          &kp B            &ht COLON J        &ht AMPERSAND L  &ht ASTERISK U  &ht QUESTION Y  &ht EXCLAMATION SQT
   &hm LGUI A   &hm LALT R   &hm LSHFT S  &hm LCTRL T    &kp G            &kp M              &hm RCTRL N      &hm RSHFT E     &hm LALT I      &hm RGUI O
   &mt LC(Z) Z  &mt LC(X) X  &mt LC(C) C  &mt LC(V) D    &kp V            &ht PLUS K         &kp H            &kp COMMA       &kp PERIOD      &kp SLASH
                             &lt 7 TAB    &lt SYM ENTER  &lt NUMFN TAB    &lt NAV BACKSPACE  &lt UTIL SPACE
@@ -127,7 +127,7 @@
             display-name = "Nav";
             bindings = <
   &trans           &trans  &trans  &trans       &trans    &trans  &trans    &kp UP_ARROW  &trans     &trans
-  &kp LC(LS(TAB))  &trans  &trans  &kp LC(TAB)  &trans    &trans  &kp LEFT  &kp DOWN      &kp RIGHT  &trans
+  &kp LC(LS(TAB))  &trans  &trans  &kp LC(TAB)  &trans    &trans  &kp LEFT  &kp DOWN      &kp RIGHT  &desktop
   &trans           &trans  &trans  &trans       &trans    &trans  &kp HOME  &kp PG_DN     &kp PG_UP  &kp END
                            &trans  &trans       &trans    &trans  &trans
             >;
@@ -334,6 +334,13 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&macro_tap>, <&kp MINUS &kp MINUS>;
+        };
+
+        desktop: desktop {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_WIN &kp D>;
+            label = "DESKTOP";
         };
     };
 };
