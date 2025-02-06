@@ -10,6 +10,7 @@
     chosen {
         zmk,kscan = &mock_kscan;
         zmk,physical-layout = &charybdis_5col_layout;
+        zephyr,display = &oled;
     };
 
     mock_kscan: mock_kscan_0 {
