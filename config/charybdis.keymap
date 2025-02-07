@@ -14,10 +14,10 @@
         compatible = "zmk,input-listener";
         device = <&trackball_split>;
 
-          snipe {
-              layers = <SNIPE>;
-              input-processors = <&zip_xy_scaler 1 3>;
-          };
+        snipe {
+            layers = <SNIPE>;
+            input-processors = <&zip_xy_scaler 1 3>;
+        };
 
         scroll {
             layers = <SCROLL>;
@@ -151,17 +151,17 @@
         };
 
         mouse_layer {
-        display-name = "Mouse";
+            display-name = "Mouse";
             bindings = <
-  &trans  &trans    &trans    &trans    &trans    &trans  &trans  &trans  &trans  &trans
-  &trans  &mkp MB1  &mo 8     &mkp MB2  &trans    &trans  &trans  &trans  &trans  &trans
-  &trans  &trans    &mkp MB3  &trans    &trans    &trans  &trans  &trans  &trans  &trans
-                    &trans    &trans    &trans    &trans  &trans
+  &trans    &trans    &mkp MB3  &trans    &trans    &trans  &trans  &trans  &trans  &trans
+  &trans    &mkp MB1  &mo 8     &mkp MB2  &trans    &trans  &trans  &trans  &trans  &trans
+  &mkp MB4  &mkp MB5  &sl 9     &trans    &trans    &trans  &trans  &trans  &trans  &trans
+                      &trans    &trans    &trans    &trans  &trans
             >;
         };
 
         scroll_layer {
-        display-name = "Scroll";
+            display-name = "Scroll";
             bindings = <
   &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
   &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
@@ -169,14 +169,15 @@
                   &trans  &trans  &trans    &trans  &trans
             >;
         };
-                snipe_layer {
-                display-name = "Snipe";
-                    bindings = <
-          &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-          &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-          &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                          &trans  &trans  &trans    &trans  &trans
-                    >;
-                };
+
+        snipe_layer {
+            display-name = "Snipe";
+            bindings = <
+  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+                  &trans  &trans  &trans    &trans  &trans
+            >;
+        };
     };
 };
