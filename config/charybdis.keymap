@@ -211,7 +211,7 @@
   &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
                   &trans  &trans  &trans    &trans  &trans
             >;
-        };}
+        };};
     macros {
         LOG_AND: LOG_AND {
             compatible = "zmk,behavior-macro";
