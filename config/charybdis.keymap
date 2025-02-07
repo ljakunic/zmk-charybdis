@@ -127,7 +127,7 @@
             display-name = "Nav";
             bindings = <
   &trans           &trans  &trans  &trans       &trans    &trans  &trans    &kp UP_ARROW  &trans     &trans
-  &kp LC(LS(TAB))  &trans  &trans  &kp LC(TAB)  &trans    &trans  &kp LEFT  &kp DOWN      &kp RIGHT  &desktop
+  &kp LC(LS(TAB))  &trans  &trans  &kp LC(TAB)  &trans    &trans  &kp LEFT  &kp DOWN      &kp RIGHT  &trans
   &trans           &trans  &trans  &trans       &trans    &trans  &kp HOME  &kp PG_DN     &kp PG_UP  &kp END
                            &trans  &trans       &trans    &trans  &trans
             >;
