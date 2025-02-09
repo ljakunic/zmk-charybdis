@@ -186,9 +186,9 @@
         mouse_layer {
             display-name = "Mouse";
             bindings = <
-  &trans  &trans    &trans    &trans    &trans    &trans  &trans  &trans  &trans  &trans
-  &trans  &mkp MB1  &mo 8     &mkp MB2  &trans    &trans  &trans  &trans  &trans  &trans
   &trans  &trans    &mkp MB3  &trans    &trans    &trans  &trans  &trans  &trans  &trans
+  &trans  &mkp MB1  &mo 8     &mkp MB2  &trans    &trans  &trans  &trans  &trans  &trans
+  &trans  &trans    &mo 9     &trans    &trans    &trans  &trans  &trans  &trans  &trans
                     &trans    &trans    &trans    &trans  &trans
             >;
         };
@@ -203,7 +203,7 @@
             >;
         };
 
-   snipe_layer {
+        snipe_layer {
             display-name = "Snipe";
             bindings = <
   &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
@@ -211,8 +211,10 @@
   &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
                   &trans  &trans  &trans    &trans  &trans
             >;
-        };};
- macros {
+        };
+    };
+
+    macros {
         LOG_AND: LOG_AND {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
