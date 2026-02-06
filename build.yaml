@@ -18,13 +18,13 @@
 #
 ---
 include:
-  - board: nice_nano_v2
+  - board: nice_nano@2
     shield: charybdis_dongle dongle_display
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
-  - board: nice_nano_v2
+  - board: nice_nano@2
     shield: charybdis_left
-  - board: nice_nano_v2
+  - board: nice_nano@2
     shield: charybdis_right
-  - board: nice_nano_v2
+  - board: nice_nano@2
     shield: settings_reset
